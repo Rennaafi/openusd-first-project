@@ -1,0 +1,35 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Xform "Part_0" (
+        prepend references = @./Part2.usda@
+    )
+    {
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Xform "Part_1" (
+        prepend references = @./Part2.usda@
+    )
+    {
+        double3 xformOp:translate = (0.15, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Xform "Part_2" (
+        prepend references = @./Part2.usda@
+    )
+    {
+        float3 xformOp:scale = (2, 2, 2)
+        double3 xformOp:translate = (0.3, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+}
+

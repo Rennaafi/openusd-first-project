@@ -1,0 +1,12 @@
+# third-party model: unknown license, 50 MB OBJ is over GitHub's warning size
+enteheiz_bebek/
+# generated from it (30 MB) - rebuild with dance.py
+duck.usda
+# stale duplicates from earlier experiments
+part.usda
+part1.usda
+# Blender scenes and generated textures
+*.blend
+*.blend1
+textures/
+__pycache__/
